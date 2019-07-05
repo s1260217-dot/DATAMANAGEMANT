@@ -4,10 +4,15 @@
 
 int main(){
   int die1, die2, total;
+  char name[10];
   srand(time(NULL));
   die1 = rand() % 6 + 1;
   die2 = rand() % 6 + 1;
   total = die1 + die2;
+  printf("What is your name?\n");
+  printf(">");
+  scanf("%s",name);
+  printf("Hello, %s!\n", name);
   printf("Rolling the dice...\n");
   printf("Die 1: %d\n", die1);
   printf("Die 2: %d\n", die2);
